@@ -24,7 +24,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     setData(null);
-    const data = await axios.post("http://localhost:3000/", {
+    const data = await axios.post("https://price-iota.vercel.app", {
       source: source,
       destination: destination,
       date: date
